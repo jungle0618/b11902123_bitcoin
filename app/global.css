@@ -1,0 +1,305 @@
+/* 全局樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* 主容器 */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 標題 */
+h1 {
+  color: #0070f3;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 112, 243, 0.1);
+}
+
+h2 {
+  color: #0070f3;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #0070f3;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* 表單容器 */
+form {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form > div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* 輸入框 */
+input[type="date"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.1);
+}
+
+/* 按鈕樣式 */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+button[type="submit"] {
+  background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%);
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 112, 243, 0.3);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* 公司選擇按鈕 */
+button[type="button"] {
+  background-color: #e8f0ff;
+  color: #0070f3;
+  border: 2px solid #e8f0ff;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+button[type="button"]:hover {
+  background-color: #dbe8ff;
+  border-color: #0070f3;
+}
+
+button[type="button"]:active {
+  background-color: #0070f3;
+  color: white;
+}
+
+/* 選中的公司按鈕 */
+button[type="button"][style*="background-color: rgb(0, 112, 243)"] {
+  background-color: #0070f3 !important;
+  color: white !important;
+  box-shadow: 0 2px 8px rgba(0, 112, 243, 0.3);
+}
+
+/* 指標容器 */
+.indicators-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #0070f3;
+}
+
+.indicators-container p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.indicators-container ul {
+  list-style: none;
+  columns: 2;
+  column-gap: 40px;
+}
+
+.indicators-container li {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+  display: block;
+  break-inside: avoid;
+}
+
+.indicators-container li strong {
+  color: #0070f3;
+}
+
+/* 圖表容器 */
+.chart-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 加載和錯誤提示 */
+p {
+  line-height: 1.6;
+}
+
+p[style*="color: rgb(0, 112, 243)"] {
+  color: #0070f3 !important;
+  font-weight: 600;
+  padding: 10px 15px;
+  background-color: #f0f8ff;
+  border-radius: 4px;
+  border-left: 4px solid #0070f3;
+}
+
+p[style*="color: red"] {
+  color: #dc3545 !important;
+  font-weight: 600;
+  padding: 10px 15px;
+  background-color: #fff5f5;
+  border-radius: 4px;
+  border-left: 4px solid #dc3545;
+}
+
+/* 表格樣式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%);
+  color: white;
+}
+
+th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+td {
+  padding: 12px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .indicators-container ul {
+    columns: 1;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 13px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .main-container {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2, h3 {
+    font-size: 1.1rem;
+  }
+
+  button[type="button"] {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* 平滑過渡 */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+button, input, select {
+  transition: all 0.3s ease;
+}

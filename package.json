@@ -1,0 +1,13 @@
+{
+    "dependencies": {
+        "@google/generative-ai": "^0.24.1",
+        "next": "^16.2.3",
+        "react": "^19.2.5",
+        "react-dom": "^19.2.5",
+        "recharts": "^3.8.1",
+        "yahoo-finance2": "^3.14.0"
+    },
+    "scripts": {
+        "dev": "next dev"
+    }
+}
